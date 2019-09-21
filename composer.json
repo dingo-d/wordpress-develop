@@ -10,11 +10,38 @@
 		"issues": "https://core.trac.wordpress.org/"
 	},
 	"require": {
-		"php": ">=5.6"
+		"php": ">=5.6",
+		"ext-date": "*",
+		"ext-dom": "*",
+		"ext-filter": "*",
+		"ext-ftp": "*",
+		"ext-gd": "*",
+		"ext-hash": "*",
+		"ext-json": "*",
+		"ext-mbstring": "*",
+		"ext-mysqli": "*",
+		"ext-posix": "*",
+		"ext-SimpleXML": "*",
+		"ext-sockets": "*",
+		"ext-SPL": "*",
+		"ext-tokenizer": "*",
+		"ext-xml": "*",
+		"ext-xmlreader": "*",
+		"ext-zlib": "*",
+		"ext-curl": "*",
+		"ext-iconv": "*",
+		"ext-libxml": "*",
+		"ext-openssl": "*",
+		"ext-pcre": "*"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "~0.5.0",
 		"wp-coding-standards/wpcs": "~2.1.0"
+	},
+	"suggest": {
+		"ext-ssh2": "*",
+		"ext-exif": "*",
+		"ext-imagick":  "* || It's possible to use gmagick extension instead, but not both at the same time."
 	},
 	"scripts": {
 		"format": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --report=summary,source --cache -d memory_limit=256M",
